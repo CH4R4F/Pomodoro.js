@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="./assets/images/tomato-favicon.png" type="x-icon/image" />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul class="mode">
+          <li class="mode__pomodoro mode--active" data-mode="pomodoro">Pomodoro</li>
+          <li class="mode__shortBreak" data-mode="shortBreak">Short Break</li>
+          <li class="mode__longBreak" data-mode="longBreak">Long Break</li>
+        </ul>
+      </nav>
+      <div class="timer">
+        <div class="timer__countdown">
+          <p class="timer__countdown__time">
+            <span id="min"></span>
+            <span>:</span>
+            <span id="sec"></span>
+          </p>
+        </div>
+        <div class="timer__progress">
+          <div class="timer__progress--value" id="progress"></div>
+        </div>
+        <div class="timer__session">
+          <p id="sessions">session #<span>1</span></p>
+        </div>
+        <div class="timer__controle">
+          <button class="timer__controle__btn start" data-action="start">start</button>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./assets/Js/index.js"></script>
+  </body>
+</html>
