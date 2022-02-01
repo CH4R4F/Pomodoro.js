@@ -7,7 +7,7 @@ const sessionsText = document.querySelector("#sessions > span");
 
 export class Pomodoro {
   constructor() {
-    this.pomodoro = 0.1;
+    this.pomodoro = 25;
     this.shortBreak = 5;
     this.longBreak = 15;
     this.sessions = 0;
