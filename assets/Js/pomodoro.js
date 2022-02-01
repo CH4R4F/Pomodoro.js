@@ -46,6 +46,14 @@ export class Pomodoro {
       seconds: 0,
     };
 
+    // plya the sound
+    document.getElementById("sound").play();
+    // show notifications
+    if (Notification.permission == "granted") {
+      let message = this.mode == "pomodoro" ? "it's time to focus on work" : "it's a break time";
+      new Notification(message);
+    }
+
     document.body.style.backgroundColor = `var(--${mode})`;
     [...modes.children].forEach((modeLabel) => modeLabel.classList.remove("mode--active"));
     document.querySelector(`.mode__${mode}`).classList.add("mode--active");

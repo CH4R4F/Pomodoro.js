@@ -6,6 +6,15 @@ const controleBtn = document.querySelector(".timer__controle__btn");
 let timer = new Pomodoro();
 
 document.addEventListener("DOMContentLoaded", () => {
+  // notification config
+  if ("Notification" in window && Notification.permission != "granted" && Notification.permission != "denied") {
+    Notification.requestPermission().then(function (permission) {
+      if (permission == "granted") {
+        new Notification("Now you'll be notified on every session");
+      }
+    });
+  }
+  // switch the session
   timer.switchMode("pomodoro");
 });
 
