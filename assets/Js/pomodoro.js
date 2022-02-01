@@ -52,6 +52,7 @@ export class Pomodoro {
     this.updateProgress();
     this.updateTimer();
     this.stop();
+    this.updateBtn("start");
   }
 
   // =========== this function will update the timer each second =========
