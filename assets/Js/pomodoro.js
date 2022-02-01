@@ -7,7 +7,7 @@ const sessionsText = document.querySelector("#sessions > span");
 
 export class Pomodoro {
   constructor() {
-    this.pomodoro = 25;
+    this.pomodoro = 0.1;
     this.shortBreak = 5;
     this.longBreak = 15;
     this.sessions = 0;
@@ -52,7 +52,6 @@ export class Pomodoro {
     this.updateProgress();
     this.updateTimer();
     this.stop();
-    this.updateBtn("start");
   }
 
   // =========== this function will update the timer each second =========

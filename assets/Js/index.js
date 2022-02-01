@@ -32,4 +32,5 @@ controleBtn.addEventListener("click", function () {
 
 modes.addEventListener("click", (e) => {
   timer.getMode(e);
+  timer.updateBtn("start");
 });
