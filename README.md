@@ -1,0 +1,3 @@
+# Pomodoro.js
+Pomodoro.js is a simple pomodoro time manager that helps me manage my time as an IT student, so I can finish my daily tasks in the shortest possible time
+> I'm working on making it a valid browser extension, with more additional features like a todolist and relaxing music player etc...
